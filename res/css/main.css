@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'gibson';
+  src: url('../gibson/Gibson-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'gibson';
+  src: url('../gibson/Gibson-RegularItalic.ttf') format('truetype');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'gibson';
+  src: url('../gibson/gibson-bold.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'gibson';
+  src: url('../gibson/Gibson-BoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: bold;
+}
+@font-face {
+  font-family: loew;
+  src: url('../Loew/Loew-Italic.otf');
+  font-style: italic;
+}
+@font-face {
+  font-family: loew;
+  src: url('../Loew/Loew-Bold.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: loew;
+  src: url('../Loew/Loew-BoldItalic.otf');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: loew;
+  src: url('../Loew/Loew-Medium.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: loew;
+  src: url('../Loew/Loew-LightItalic.otf');
+  font-weight: light;
+  font-style: italic;
+}
+@font-face {
+  font-family: loew;
+  src: url('../Loew/Loew-Thin.otf');
+  font-weight: lighter;
+}
+@font-face {
+  font-family: loew;
+  src: url('../Loew/Loew-ThinItalic.otf');
+  font-weight: lighter;
+  font-style: italic;
+}
+
+body {
+  /* height: 100%;
+  width: 100%; */
+  font-family: loew;
+  color: white;
+  background-color: black;
+}
+h1 {
+  letter-spacing: 0.16em;
+  /* font-family: loew; */
+  font-weight: bolder;
+  /* font-style: italic; */
+  font-size: 40px;
+  text-transform: uppercase;
+  /* box-shadow: inset 0 -0.175em white, inset 0 -0.2em #000; */
+  display: inline;
+}
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+#header {
+  width: 100%;
+  /* display: flex; */
+  background-color: rgba(0, 0, 0, 1);
+}
+#header .menu {
+  z-index: 1;
+  /* padding-bottom: 4.75%; */
+  padding-bottom: 4.75%;
+  background-color: rgba(127, 127, 127, 1);
+}
+#splash {
+  position: absolute;
+  /* top: calc(50% - 100px);
+  left: calc(50% - 100px); */
+  top: 0%;
+  left: 5%;
+  transition: all 0.5s;
+  /* transform: scale(0.75); */
+  transform-origin: 50% 50%;
+}
+#splash:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+#video-bg {
+  z-index: -20;
+  display: inline-block; /* let it be styled thusly */
+  padding: 0;            /* get rid of pre-styling */
+  /* margin: 0; */
+  margin-top: -4.75%;
+  margin-bottom: -1%;
+  width: 100%;           /* take up full width available */
+  padding-top: 56.25%;   /* give aspect ratio of 16:9; "720 / 1280 = 0.5625" */
+  height: 0px;           /* don't want it to expand beyond padding */
+  position: relative;  
+  overflow: hidden;
+}
+#video-bg iframe,
+#video-bg object,
+#video-bg embed {
+  /* z-index: -20; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.section {
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 50px;
+  margin: 5px;
+}
+
+.double-column{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+  padding: 50px;
+  margin: 5px;
+}
+
+.white{
+  background-color: white;
+  color: rgb(41, 41,41);
+  /* color: slategrey; */
+}
+
+.gray {
+  background-color: darkslategray;
+  color: white;
+}
+
+.blue {
+  background-color: steelblue;
+  color: white;
+}
+
+.black {
+  background-color: rgb(41, 41,41);
+  color: white;
+}
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1
+  }
+
+  .double-column {
+    flex: 2
+  }
+}
