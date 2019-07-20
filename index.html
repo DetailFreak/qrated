@@ -4,21 +4,45 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Qrated</title>
+    <title>Qrated</title>
+    <link 
+      ref="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" 
+      rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="./res/css/main.css" />
 	</head>
 	<body>
+    <!-- Header container:
+      What does this "header" do?
+      Don't know, but it works.
+
+      Why "Menu" ?
+      It's needed to make left and right navs.
+      -->
 		<div id="header">
 			<div class="menu">
-
-			</div>
-				<div id="video-bg">
-						<iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/QNBhWn9Ictc?rel=0&start=34&loop=1&autoplay=1&mute=1&controls=0&disablekb=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>
-					</div>
-			<svg id="splash" width="200px" height="200px" viewBox="0 0 100 100">
+				<nav>
+					<a href="kerplunk.html">Kerplunk</a>
+					<a href="nodiggity.html">No Diggity</a>
+					<a href="electrq.html">ElectrQ</a>
+					<a href="contact.html">Support</a>
+				</nav>
+				<div id="video-bgr">
+            <iframe 
+              id="video" 
+              src="https://www.youtube.com/embed/QNBhWn9Ictc?start=34&end=200&loop=1&playlist=QNBhWn9Ictc&autoplay=1&mute=1&controls=0&disablekb=1&modestbranding=1" 
+              frameborder="0" 
+              allowfullscreen>
+            </iframe>
+				</div>
+			  <svg id="splash" viewBox="0 0 100 100">
 				<defs>
 					<style type="text/css">
-						@font-face {
+						<!-- @font-face {
+							font-family: Loew;
+							src: url('res/Loew-Heavy.otf');
+            }	
+             -->
+             @font-face {
 							font-family: Loew;
 							src: url('res/Loew-Heavy.otf');
 						}		
@@ -35,7 +59,7 @@
 					<path id="cutout" d="M 71.5 85.0 C 74.5 89, 78 88.65, 79 88.65 h 10 v 10 h -15 Z" stroke="black" fill="black" />
 					</mask>
         <!-- 10.36 maskRect width -->
-        <circle id="background" cx="50%" cy="50%" r="50%" stroke="rgba(0,0,0,0)" fill="black" />
+        <!-- <circle id="background" cx="50%" cy="50%" r="50%" stroke="rgba(0,0,0,0)" fill="black" /> -->
 				<g mask="url(#m)">
 					<circle cx="50%" cy="50%" r="35%" stroke="white" stroke-width="6.25%" fill="rgba(255,255,255,0)" />
 					<rect id="streak" x="47%" y="81.9%" width="6.25%" height="20%" fill="rgba(255,255,255,0)" transform="rotate(-37, 50, 50) rotate(3.4,50,85)"  />
@@ -47,57 +71,221 @@
 					<!-- <path id="cutout2" d="M 143 169 C 149 178, 156 177.3, 158 177.3 h 20 v 20 h -30 Z" stroke="black" fill="black" /> -->
 
 					<!-- <path id="cutout" d="M 72.5 84.5 C 74.5 69, 78 88.65, 79 88.65 h 10 v 10 h -15 Z" stroke="white" fill="white" /> -->
-				<text id='rated' x="25.5" y="53.75" font-family="Loew" font-size="11.25" fill="rgba(255,255,255,0)">
+				<text id='rated' x="25.5" y="53.75" font-family="Loew" font-size="11.75" fill="rgba(255,255,255,0)">
 					RATED
 				</text>
-				</svg>
-				</div>
-		<div class="section">
-			<div class="row">
-				<div class="double-column white" style="justify-content:space-around">
-					<h1>INDEPENDENCE IS A CHOICE</h1>
-					</div>
-				<div class="column gray">
-					<svg width="100%" height="100%">
-							<defs>
-								<style type="text/css">
-									@font-face {
-										font-family: Loew;
-										src: url('res/Loew-Heavy.otf');
-									}		
-									#rated2 {
-										letter-spacing: 0.16em;
-										font-kerning: normal;
-									}
-									</style>
-								</defs>
-							
-							<mask id="m2">
-								<rect x="0" y="23" width="200" height="154" fill="white" />
-								<rect id="maskRect2" x="94" y="160" width="10.36" height="20" fill="black" transform="rotate(-28.5, 100,100) rotate(-5.2,95,170)"/>
-								<path id="cutout2" d="M 143 169 C 149 178, 156 177.3, 158 177.3 h 20 v 20 h -30 Z" stroke="black" fill="black" />
-								</mask>
-							<!-- 10.36 maskRect width -->
-								
-							<g mask="url(#m2)">
-								<circle cx="100" cy="100" r="70" stroke="white" stroke-width="12.5" fill="rgba(255,255,255,0)" />
-								<rect id="streak2" x="94" y="163.8" width="12.5" height="40" fill="rgba(255,255,255,1)" transform="rotate(-37, 100, 100) rotate(3.4,100,170)"  />
-								</g> 
-								<!-- 12.5 rect width -->
-							
-							<text id='rated2' x="51" y="107.5" font-family="Loew" font-size="22.5" fill="rgba(255,255,255,1)">
-								RATED
-								</text>
-							</svg>		
-					</div>
-				</div>
-				<div class="row">
-					<div class="column black">
-							<p> Qrated is a Delhi based independent artist label and event management collective. It believes in curating any creative collaboration which stands for an 'artists-first', 'know the underground' and 'ArtEast' approach. Founded in 2017, Qrated represents the choice of underground art as a lifestyle, to make this choice sustainable and walk the thin line between the commercial and the popular.
-								</p>
-					</div>
-				</div>
+        </svg>
+        <div class="row" 
+             style="position: absolute;
+                    width: 100%; 
+                    height: 100%;
+                    ">
+          <div class="column" 
+               style="margin: 0;
+                      padding: 0;
+                      height: 100%;
+                      justify-content: center
+                      ">
+            <h2 style="text-align: center">INDEPENDENCE IS A CHOICE.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content:
+      TODO: 
+        Make graphite Darker.
+      -->
+    <div class="section graphite" style="margin-top: -9vh;">
+
+      <!-- Properties Banner:
+          TODO:
+            Make background darker,
+            Make Items same height,
+            Make itmes transparent.
+
+          Why's there a column?
+        -->
+      <div class="column white fill" style="justify-content:space-around">
+          <div class="row white">
+            <div class="column white"><img class="fit" src="./res/images/kerplunk.png" alt="Kerplunk"></div>
+            <div class="column "><img class="fit" src="./res/images/Shuffle_Logo_Gram.png" alt=""></div>
+            <div class="column "><img class="fit" src="./res/images/No Diggity_1.jpg" alt="NoDiggity"></div>
+            <div class="column "><img class="fit" src="./res/images/ELCTRQ_Logo.png" alt="Elctrq"></div>
+            <div class="column "><img class="fit" src="./res/images/ThirstyLlama_Colour.png" alt="Thirsty Llama"></div>
+            <div class="column "><img class="fit" src="./res/images/MarkIV_LogoCOLOUR.png" alt="Mark IV"></div>
+          </div>
+      </div>
+
+      <!-- Why this column warpper? -->
+      <div class="column fill graphite"> 
+        
+        <!-- Big Text Section !:
+          TODO:
+            Multiple Break points for responsiveness.
+        -->
+        <div class="row fill" style="height: 105vh">
+          <div class="column" style="justify-content: center">
+            <h2 >We provide artists a full house in every performance,
+               putting your music in the limelight it deserves but
+               seldom gets. 
+            </h2>
+          </div>
+        </div>
+
+        <h1 class="large"> What We Do</h1><br>
+
+        <!-- Staggered Images Section 1:
+          TODO:
+            Add images,
+              - Select Good Images for each section.
+              - Size them up.
+              - Make class for Images
+            Test responsiveness
+        -->
+        <div class="row fill" style="height: 100vh">
+          <div class="column" style="justify-content: flex-start">
+            <img style="height: 60vh; object-fit: cover" src="./res/images/HIGH RES 3.jpg" alt="an image">
+            <h3>Strategic Planning</h3>
+            <br>
+            <p class="thin">Our team of industry experts work with Independent
+               artists to develop national and global release strategies
+               ensuring your music gets heard by people who are your target
+               audience. </p>
+          </div>
+          <div class="column" style="justify-content: center">
+              <img style="height: 60vh; object-fit: cover" src="./res/images/HIGH RES 3.jpg" alt="an image">
+            <h3>Artist & Tour Management</h3>
+            <br>
+            <p class="thin">We have a close relationship with the right people
+               at the right places and talk to them regularly to pitch our 
+               artistes.</p>
+          </div>
+          <div class="column" style="justify-content: flex-end">
+              <img style="height: 60vh; object-fit: cover" src="./res/images/HIGH RES 3.jpg" alt="an image">
+            <h3>Events</h3>
+            <br>
+            <p class="thin"></pclass>You’ve already got the music goods.
+               We make sure that your art gets the eyes and the ears it
+               deserves.</p>
+          </div>
+        </div>
+
+        <!-- Staggered Images Section 2:
+          TODO:
+            Add images,
+              - Select Good Images for each section.
+              - Size them up.
+              - Make class for Images
+            Test responsiveness
+        -->
+        <div class="row fill" style="height: 100vh">
+          
+          <div class="column" style="justify-content: flex-start">
+            <img style="height: 60vh; object-fit: cover" src="./res/images/pp.jpg" alt="an image">
+            <h3>Legal solutions</h3>
+            <br>
+            <p class="thin">Our legal team is a one stop shop for securing your
+              interests as an artist. </p>
+          </div>
+          <div class="column" style="justify-content: center">
+            <img style="height: 60vh; object-fit: cover" src="./res/images/16804118_606430119550115_9097669900772447185_o.jpg" alt="an image">
+            <h3>Artist PR</h3>
+            <br>
+            <p class="thin">Our PR team works with artists to help tell their
+              story to the right people. </p>
+          </div>
+          <div class="column" style="justify-content: flex-end">
+            <img style="height: 60vh; object-fit: cover" src="./res/images/qrated final work 2.jpg" alt="an image">
+            <h3>Digital campaigns</h3>
+            <br>
+            <p class="thin">We develop campaigns to make noise about your
+             music and our events.  </p>
+          </div>
+        </div>
+
+        <!-- Big Text Section 2:
+          TODO:
+            Multiple Break points for responsiveness.
+        -->
+        <div class="row fill" style="height: 105vh">
+          <div class="column" style="justify-content: center">
+            <h2 style="text-align: center">A packed house means an electric
+              atmosphere where the event itself becomes an experience in
+              which every member of the audience is as integral as the 
+              artists. </h2>
+          </div>
+        </div>
+
+        <!-- Big Text Section 3:
+          TODO:
+            Multiple Break points for responsiveness.
+        -->
+        <div class="row fill" style="height: 105vh">
+          <div class="column" style="justify-content: center">
+            <h2 style="text-align: center"> The high attendance numbers
+              ensure that in each performance the artist is able to
+              reach out to newer audiences, hence exponentially
+              increasing their fan base every gig.</h2>
+          </div>
+        </div>
+
+
 			</div>
+		</div>
+		<footer>
+			<div class="row">
+          <svg id="something" viewBox="0 0 100 100">
+              <defs>
+                <style type="text/css">
+                  <!-- @font-face {
+                    font-family: Loew;
+                    src: url('res/Loew-Heavy.otf');
+                  }	
+                   -->
+                   @font-face {
+                    font-family: Loew;
+                    src: url('res/Loew-Heavy.otf');
+                  }		
+                  #rated {
+                    letter-spacing: 0.16em;
+                    font-kerning: normal;
+                  }
+                  </style>
+                </defs>
+              
+              <mask id="m">
+                <rect x="0%" y="11.5%" width="100%" height="77.0%" fill="white" />
+                <rect id="maskRect" x="47%" y="80%" width="5.18%" height="10%" fill="black" transform="rotate(-28.5, 50%,50%) rotate(-5.2,47.5%,85%)"/>
+                <path id="cutout" d="M 71.5 85.0 C 74.5 89, 78 88.65, 79 88.65 h 10 v 10 h -15 Z" stroke="black" fill="black" />
+                </mask>
+              <!-- 10.36 maskRect width -->
+              <!-- <circle id="background" cx="50%" cy="50%" r="50%" stroke="rgba(0,0,0,0)" fill="black" /> -->
+              <g mask="url(#m)">
+                <circle cx="50%" cy="50%" r="35%" stroke="white" stroke-width="6.25%" fill="rgba(255,255,255,0)" />
+                <rect id="streak" x="47%" y="81.9%" width="6.25%" height="20%" fill="rgba(255,255,255,0)" transform="rotate(-37, 50, 50) rotate(3.4,50,85)"  />
+                </g> 
+                <!-- <line x1="0" y1="90" x2="100" y2=90 stroke="red"/> -->
+                <!-- <path id="cutout" d="M 71.5 84.5 C 74.5 89, 78 88.65, 79 88.65 h 10 v 10 h -15 Z" stroke="red" fill="red" /> -->
+      
+                <!-- 12.5 rect width -->
+                <!-- <path id="cutout2" d="M 143 169 C 149 178, 156 177.3, 158 177.3 h 20 v 20 h -30 Z" stroke="black" fill="black" /> -->
+      
+                <!-- <path id="cutout" d="M 72.5 84.5 C 74.5 69, 78 88.65, 79 88.65 h 10 v 10 h -15 Z" stroke="white" fill="white" /> -->
+              <text id='rated' x="25.5" y="53.75" font-family="Loew" font-size="11.75" fill="rgba(255,255,255,0)">
+                RATED
+              </text>
+              </svg>
+				<div class="column" style="line-height: 2em;">
+					<a href="kerplunk.html">Kerplunk</a>
+					<a href="nodiggity.html">NoDiggity</a>
+					<a href="electrq.html">Elctrq</a>
+				</div>
+				<button class="donate">
+					Instamojo
+				</button>
+			</div>
+		</footer>
     <script src="./res/js/main.js" type="text/javascript"></script>
 	</body>
 </html>

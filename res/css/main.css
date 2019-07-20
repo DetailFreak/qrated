@@ -4,106 +4,122 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'gibson';
-  src: url('../gibson/Gibson-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'gibson';
-  src: url('../gibson/Gibson-RegularItalic.ttf') format('truetype');
-  font-style: italic;
-}
-@font-face {
-  font-family: 'gibson';
-  src: url('../gibson/gibson-bold.ttf') format('truetype');
-  font-weight: bold;
-}
-@font-face {
-  font-family: 'gibson';
-  src: url('../gibson/Gibson-BoldItalic.ttf') format('truetype');
-  font-style: italic;
-  font-weight: bold;
-}
-@font-face {
-  font-family: loew;
-  src: url('../Loew/Loew-Italic.otf');
-  font-style: italic;
-}
-@font-face {
-  font-family: loew;
-  src: url('../Loew/Loew-Bold.otf');
-  font-weight: bold;
-}
-@font-face {
-  font-family: loew;
-  src: url('../Loew/Loew-BoldItalic.otf');
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: loew;
-  src: url('../Loew/Loew-Medium.otf');
-  font-weight: normal;
-}
-@font-face {
-  font-family: loew;
-  src: url('../Loew/Loew-LightItalic.otf');
-  font-weight: light;
-  font-style: italic;
-}
-@font-face {
-  font-family: loew;
-  src: url('../Loew/Loew-Thin.otf');
-  font-weight: lighter;
-}
-@font-face {
-  font-family: loew;
-  src: url('../Loew/Loew-ThinItalic.otf');
-  font-weight: lighter;
-  font-style: italic;
-}
-
 body {
   /* height: 100%;
   width: 100%; */
-  font-family: loew;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+              Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+              'Helvetica Neue', sans-serif;
   color: white;
-  background-color: black;
+  background-color: #070707;
 }
 h1 {
-  letter-spacing: 0.16em;
+  /* letter-spacing: 0.16em; */
   /* font-family: loew; */
-  font-weight: bolder;
+  font-weight: 700;
   /* font-style: italic; */
-  font-size: 40px;
-  text-transform: uppercase;
+  font-size: 60px;
+  /* text-transform: uppercase; */
   /* box-shadow: inset 0 -0.175em white, inset 0 -0.2em #000; */
   display: inline;
+  line-height: 1.5em;
+}
+.large {
+  font-size: 60px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  display: inline;
+  line-height: 1.5em;
+
+}
+h3 {
+  font-weight: 700;
+  font-size: 30px;
+  display: inline;
+  line-height: 1.5em;
+
+}
+.thin {
+  font-weight: 400;
 }
 p {
-  font-size: 20px;
-  font-weight: bold;
+  color: silver;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+img.fit{
+  object-fit: scale-down;
+  width: 100%;
+  min-width: 150px;
+  height: 150px;
+  }
+
+.full{
+  max-width: 100%;
+  margin: 0 0px;
+  height: 100vh;
+  object-fit: contain;
+}
+
+.features {
+  height: 60vh;
+  object-fit: cover;
 }
 #header {
+  /* box-sizing: border-box; */
   width: 100%;
   /* display: flex; */
-  background-color: rgba(0, 0, 0, 1);
+  /* color: white; */
+  background-color: rgba(07, 07, 07, 1);
 }
 #header .menu {
   z-index: 1;
-  /* padding-bottom: 4.75%; */
+  display: flex;
+  /* box-sizing: border-box; */
+  /* padding: 0 20px; */
+  /* margin: 0 100px; */
   padding-bottom: 4.75%;
-  background-color: rgba(127, 127, 127, 1);
+  /* margin-left: 20px; */
+  /* margin-right: 20px; */
+  height: 100%;
+  /* width: 100%; */
+  /* padding-bottom: 100%; 
+*/
+justify-content: flex-end;
+  background-color: rgba(127, 127, 127, 0);
+}
+#header .menu > nav {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  line-height: 10vh;
+  padding-left: 15vh;
+  /* padding-right: 10px; */
+}
+#header .menu > nav > a {
+  display: flex;
+  z-index: 1;
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
 }
 #splash {
   position: absolute;
+  z-index: 2;
   /* top: calc(50% - 100px);
   left: calc(50% - 100px); */
+  height: 15vh;
+  max-height: 500px;
+  /* min-width: 100px; */
+  /* height: 25%; */
   top: 0%;
-  left: 5%;
+  left: 10px;
   transition: all 0.5s;
   /* transform: scale(0.75); */
-  transform-origin: 50% 50%;
+  /* transform-origin: 50% 50%; */
 }
 #splash:hover {
   transform: rotate(360deg) scale(1.2);
@@ -113,7 +129,9 @@ p {
   display: inline-block; /* let it be styled thusly */
   padding: 0;            /* get rid of pre-styling */
   /* margin: 0; */
-  margin-top: -4.75%;
+  /* margin-top: -4.75%; */
+  /* margin-top: -5.5%; */
+  margin-top:1%;
   margin-bottom: -1%;
   width: 100%;           /* take up full width available */
   padding-top: 56.25%;   /* give aspect ratio of 16:9; "720 / 1280 = 0.5625" */
@@ -131,10 +149,43 @@ p {
   left: 0;
   right: 0;
 }
+#video-bgr {
+  z-index: -10;
+  display: inline-block;
+  padding:0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* justify-content: center; */
+  overflow: hidden;
+}
+
+#video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 217.78vh;
+  height:140vh;
+  margin-top: -20vh;
+  margin-left: - 10%;
+}
+/* #video-bgr iframe,
+#video-bgr object,
+#video-bgr embed {
+  z-index: -20;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} */
 
 .section {
   margin-top: 20px;
   box-sizing: border-box;
+  background-color: #070707;
 }
 
 .row {
@@ -150,8 +201,18 @@ p {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  padding: 50px;
+  padding: 24px;
   margin: 5px;
+}
+/* .column .grow {
+
+} */
+section .fill,
+.row .fill,
+.column .fill,
+.double-column .fill {
+  margin: 0;
+  padding: 0;
 }
 
 .double-column{
@@ -163,9 +224,23 @@ p {
   margin: 5px;
 }
 
+footer a {
+  text-decoration: none;
+  font-size: 12;
+  color: gray;
+
+}
+
+.first, .second, .third, .fourth {
+  /* display: none; */
+  font-weight: 400px;
+  opacity: 0;
+  color: white; 
+}
+
 .white{
   background-color: white;
-  color: rgb(41, 41,41);
+  color: rgb(07,07,07);
   /* color: slategrey; */
 }
 
@@ -173,15 +248,35 @@ p {
   background-color: darkslategray;
   color: white;
 }
-
+.graphite {
+  background-color: rgb(41, 41, 41);
+  color: white;
+}
+.darkblue {
+  background-color: slateblue;
+  color: white;
+}
 .blue {
   background-color: steelblue;
+  color: black;
+}
+.black {
+  /* background-color: rgb(21, 21,21); */
+  background-color: #070707;
   color: white;
 }
 
-.black {
-  background-color: rgb(41, 41,41);
-  color: white;
+.donate {
+  height: 55px;
+  width: 250px;
+  background-color: orange;
+  color: black;
+  border-radius: 10%;
+  box-shadow: 0 0 3px yellow;
+  border: 2px solid brown;
+  font-size: 2.5em;
+
+  font-weight: 700;
 }
 @media screen and (min-width: 800px) {
   .column {
