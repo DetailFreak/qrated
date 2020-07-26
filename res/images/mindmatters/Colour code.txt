@@ -1,0 +1,3 @@
+BLue : #00b4d8
+Black : #333333
+White : #f2f2f2
