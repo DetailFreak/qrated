@@ -299,6 +299,16 @@ footer a {
   height: 100vh;
 }
 
+.bottom-right {
+  
+}
+
+@media (orientation: portrait) {
+  .bottom-right {
+    object-fit: contain;
+  }
+}
+
 .hidden {
   opacity: 0;
 }
